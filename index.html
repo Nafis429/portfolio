@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans&family=Poppins:ital@0;1&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/images /logo.png" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>
+            Hi,I'm
+            <span
+              >Shahriar <br />
+              Nafis </span
+            >from London
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title" >About Me</h1>
+            <p>
+              A warm welcome! I'm Nafis, a vibrant Computer Science freshman at
+              Brunel University London, fueled by an insatiable passion for
+              coding and a constant thirst for exploring the latest
+              technologies. Specializing in Frontend Development, I'm on a
+              mission to make digital experiences not just functional but
+              downright awesome. I'm the tenacious type who won't budge from the
+              computer until every bug is squashed, showcasing not just coding
+              prowess but a deep well of patience and a knack for
+              problem-solving. My dedication and love for coding are evident in
+              my daily quest to learn something new in the ever-evolving tech
+              world. Juggling a demanding academic schedule, I'm not just about
+              hitting the books but putting theory into action. I work
+              diligently five days a week, seamlessly managing university tasks
+              and classes. I don't just stop there—constantly creating new
+              projects to grasp the intricacies of development and stay ahead of
+              the curve. Known for my meticulous attention to detail and an
+              unwavering work ethic, I approach challenges not as roadblocks but
+              as stepping stones for personal and professional growth.
+              Punctuality is my middle name, ensuring that I meet deadlines and
+              exceed expectations in any situation. Let's connect and dive into
+              the exciting intersection of technology and innovation! I'm ready
+              to collaborate, learn, and contribute to the ever-evolving world
+              of coding.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />
+                  Java,Javascript, HTML,CSS,SCSS,SQL
+                </li>
+                <li>
+                  <span>Technologies</span><br />MERN,React, React
+                  Native,Node,MongoDB, Sanity,Talwind,MaterialUI,
+                  Bootstrap,Eclipse Window Builder,GitHub
+                </li>
+                <li>
+                  <span>Concepts</span><br />API,DOM,Object Oriented Programming
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Tesco-Colleague</span><br />Customer-Focused
+                  Expertise:Skillfully addressed and resolved queries, made
+                  informed decisions in challenging situations, and provided
+                  exemplary service, fostering positive customer relationships.
+                  <br />Product Quality Assurance: Ensured product quality by
+                  checking expiration dates, delivering the best to customers.
+                  <br />Multi-Departmental Expertise: Applied skills across
+                  diverse departments, showcasing adaptability. <br />
+                  Continuous Learning: Embraced daily learning, staying updated
+                  on industry trends and practices.
+                </li>
+                <li>
+                  <span>Ten Minute School-Intern</span><br />Enhanced design
+                  skills: Specialized in creating visually compelling designs
+                  and proficient in using Microsoft PowerPoint to simplify
+                  complex information. <br />
+                  Team Collaboration and Learning: Worked collaboratively,
+                  gaining basic knowledge in web design and JavaScript
+                  programming. Demonstrated a strong passion for development,
+                  continuously improving skills even during the pandemic.
+                  <br />Maintained financial independence through part-time
+                  work, showcasing dedication and responsibility.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>BSC Computer Science</span><br />Brunel University
+                  London
+                </li>
+                <li>
+                  <span>A-levels</span><br />Chattagram Cantonment Public
+                  College
+                </li>
+                <li>
+                  <span>High School</span><br />Govt.Muslim High
+                  School,Chattagram
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>FrontEnd Development</h2>
+            <p>
+              Proficient in crafting dynamic and visually appealing websites
+              using cutting-edge technologies such as React and Tailwind CSS. My
+              skill set extends to HTML, CSS, SCSS, Material UI, and Application
+              Programming Interfaces (APIs).
+            </p>
+            <a href="#portfolio">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>App Development</h2>
+            <p>
+              Specialize in building mobile apps using React Native. With a
+              passion for seamless user experiences and clean code, I bring your
+              app ideas to life.
+            </p>
+            <a href="#portfolio">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work" id="w">
+            <img src="/images /work-1.png" alt=""  class="work1"/>
+            <div class="layer">
+              <h3>Gym App</h3>
+              <p>
+                Implemented robust exercise search for tailored fitness goals
+                Developed systematic body part categorization for structured
+                workout routines Integrated Rapid API for up-to-date and
+                accurate exercise information Provided detailed muscle group
+                info and incorporated animated and real-life video
+                demonstrations for user understanding and correct form promotion
+                form and technique.
+              </p>
+              <a href="https://fitlifearena.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images /work-2.png" alt=""  class="work2"/>
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                Provides real-time weather updates for searched cities. Features
+                dynamic background images from Unsplash corresponding to the
+                city. Utilizes OpenWeatherMap API for live weather data. Fully
+                responsive for optimal functionality on various devices.
+              </p>
+              <a href="https://nafis429.github.io/Weather_App/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images /work-3.png" alt="" class="work3"/>
+            <div class="layer">
+              <h3>Movie Searching App</h3>
+              <p>
+                my debut ReactJS project—an immersive cinematic exploration
+                platform. With real-time search, powered by OMDBAPI, and a
+                modern, responsive design using Tailwind CSS, MovifyQuest
+                delivers an engaging interface for seamless discovery of movies
+                and TV series.
+              </p>
+              <a href="https://nafis429.github.io/movieapp/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="buttonssss">
+          <div>
+            <a href="https://github.com/Nafis429"  target="_blank" class="btn" target="_blank"
+              >See More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>Shariarnafis88@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+447513852307</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100068971786437"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/nafieess/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/shahriar-nafis-06a6b3200/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/ShariarNaf67981"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+            </div>
+            <a href="/images /Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©Nafis2023</p>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzyfYAJmiMIp9yRri61mzRhgG24WDtuPLJnis9pSx4eh7AVvZCUNW8i8b3h7ZBwu4y05g/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
